@@ -1,0 +1,172 @@
+themes {
+    anysphere {
+        // ─────────────────────────────────────────────
+        // Anysphere.nvim
+        // https://github.com/dapovich/anysphere.nvim
+        //
+        // Base:
+        //   bg       #181818
+        //   fg       #d6d6dd
+        //
+        // Accents:
+        //   blue     #94c1fa
+        //   cyan     #83d6c5
+        //   green    #98c379
+        //   yellow   #ebc88d
+        //   orange   #efb080
+        //   red      #f75f5f
+        //   pink     #e394dc
+        //   purple   #aaa0fa
+        // ─────────────────────────────────────────────
+
+        // Basic text
+        text_unselected {
+            base 214 214 221       // #d6d6dd
+            background 24 24 24    // #181818
+            emphasis_0 238 238 238 // #eeeeee
+            emphasis_1 179 179 179 // #b3b3b3
+            emphasis_2 148 193 250 // #94c1fa
+            emphasis_3 131 214 197 // #83d6c5
+        }
+
+        text_selected {
+            base 238 238 238
+            background 38 41 47    // #26292f
+            emphasis_0 255 255 255
+            emphasis_1 214 214 221
+            emphasis_2 170 160 250 // #aaa0fa
+            emphasis_3 227 148 220 // #e394dc
+        }
+
+        // Unselected tabs / ribbons
+        ribbon_unselected {
+            base 179 179 179       // #b3b3b3
+            background 38 41 47    // #26292f
+            emphasis_0 147 147 147 // #939393
+            emphasis_1 156 163 178 // #9ca3b2
+            emphasis_2 148 193 250 // #94c1fa
+            emphasis_3 131 214 197 // #83d6c5
+        }
+
+        // Active tab / selected ribbon — muted gray fill, dark text
+        ribbon_selected {
+            base 24 24 24          // #181818 text on the gray fill
+            background 179 179 179 // #b3b3b3
+            emphasis_0 24 24 24
+            emphasis_1 38 41 47    // #26292f
+            emphasis_2 24 24 24
+            emphasis_3 38 41 47
+        }
+
+        // Table titles
+        table_title {
+            base 24 24 24
+            background 170 160 250  // #aaa0fa
+            emphasis_0 24 24 24
+            emphasis_1 75 82 97     // #4b5261
+            emphasis_2 148 193 250  // #94c1fa
+            emphasis_3 227 148 220  // #e394dc
+        }
+
+        table_cell_unselected {
+            base 214 214 221
+            background 24 24 24
+            emphasis_0 179 179 179
+            emphasis_1 147 147 147
+            emphasis_2 148 193 250
+            emphasis_3 131 214 197
+        }
+
+        table_cell_selected {
+            base 238 238 238
+            background 38 41 47
+            emphasis_0 238 238 238
+            emphasis_1 179 179 179
+            emphasis_2 170 160 250
+            emphasis_3 227 148 220
+        }
+
+        // Lists
+        list_unselected {
+            base 214 214 221
+            background 24 24 24
+            emphasis_0 179 179 179
+            emphasis_1 147 147 147
+            emphasis_2 148 193 250
+            emphasis_3 131 214 197
+        }
+
+        list_selected {
+            base 238 238 238
+            background 38 41 47
+            emphasis_0 238 238 238
+            emphasis_1 214 214 221
+            emphasis_2 170 160 250
+            emphasis_3 227 148 220
+        }
+
+        // Pane borders
+        frame_unselected {
+            base 75 82 97         // #4b5261
+            background 24 24 24
+            emphasis_0 75 82 97
+            emphasis_1 91 91 91   // #5b5b5b
+            emphasis_2 109 109 109 // #6d6d6d
+            emphasis_3 38 41 47   // #26292f
+        }
+
+        // Focused pane — plain muted gray border
+        frame_selected {
+            base 179 179 179      // #b3b3b3
+            background 24 24 24
+            emphasis_0 179 179 179
+            emphasis_1 179 179 179
+            emphasis_2 179 179 179
+            emphasis_3 179 179 179
+        }
+
+        // Focused pane when in a Zellij mode — same muted gray, no color shift
+        frame_highlight {
+            base 179 179 179      // #b3b3b3
+            background 24 24 24
+            emphasis_0 179 179 179
+            emphasis_1 179 179 179
+            emphasis_2 179 179 179
+            emphasis_3 179 179 179
+        }
+
+        // Command exit status
+        exit_code_success {
+            base 152 195 121      // #98c379
+            background 24 24 24
+            emphasis_0 152 195 121
+            emphasis_1 152 195 121
+            emphasis_2 152 195 121
+            emphasis_3 152 195 121
+        }
+
+        exit_code_error {
+            base 247 95 95        // #f75f5f
+            background 24 24 24
+            emphasis_0 247 95 95
+            emphasis_1 247 95 95
+            emphasis_2 247 95 95
+            emphasis_3 247 95 95
+        }
+
+        // Multiplayer users
+        multiplayer_user_colors {
+            player_1 148 193 250   // blue
+            player_2 131 214 197   // cyan
+            player_3 152 195 121   // green
+            player_4 235 200 141   // yellow
+            player_5 239 176 128   // orange
+            player_6 247 95 95     // red
+            player_7 227 148 220   // pink
+            player_8 170 160 250   // purple
+            player_9 206 149 184   // soft pink
+            player_10 238 121 159  // pale violet red
+        }
+    }
+}
+
