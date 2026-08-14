@@ -168,6 +168,8 @@ keybinds clear-defaults=true {
         bind "Ctrl q" { Quit; }
         bind "Alt Shift h" { GoToPreviousTab; }
         bind "Alt Shift l" { GoToNextTab; }
+        bind "Alt u" { HalfPageScrollUp; }
+        bind "Alt d" { HalfPageScrollDown; }
     }
     shared_except "locked" "move" {
         bind "Ctrl h" { SwitchToMode "move"; }
