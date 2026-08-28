@@ -129,7 +129,7 @@ keybinds clear-defaults=true {
             }
             SwitchToMode "normal"
         }
-        bind "Ctrl o" { SwitchToMode "normal"; }
+        bind "Alt s" { SwitchToMode "normal"; }
         bind "p" {
             LaunchOrFocusPlugin "plugin-manager" {
                 floating true
@@ -168,14 +168,21 @@ keybinds clear-defaults=true {
         bind "Ctrl q" { Quit; }
         bind "Alt Shift h" { GoToPreviousTab; }
         bind "Alt Shift l" { GoToNextTab; }
-        bind "Alt u" { HalfPageScrollUp; }
-        bind "Alt d" { HalfPageScrollDown; }
+        bind "Alt u" { ScrollUp; ScrollUp; ScrollUp; ScrollUp; ScrollUp; ScrollUp; ScrollUp; ScrollUp; }
+        bind "Alt d" { ScrollDown; ScrollDown; ScrollDown; ScrollDown; ScrollDown; ScrollDown; ScrollDown; ScrollDown; }
+        bind "Alt e" {
+            Run "/bin/bash" "/Users/ramonito/.config/zellij/scripts/omp-draft.sh" {
+                direction "Down"
+                close_on_exit true
+                name "omp-draft"
+            }
+        }
     }
     shared_except "locked" "move" {
         bind "Ctrl h" { SwitchToMode "move"; }
     }
     shared_except "locked" "session" {
-        bind "Ctrl o" { SwitchToMode "session"; }
+        bind "Alt s" { SwitchToMode "session"; }
     }
     shared_except "locked" "scroll" {
         bind "Alt left" { MoveFocusOrTab "left"; }
