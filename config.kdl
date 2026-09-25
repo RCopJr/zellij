@@ -171,7 +171,7 @@ keybinds clear-defaults=true {
         bind "Alt u" { ScrollUp; ScrollUp; ScrollUp; ScrollUp; ScrollUp; ScrollUp; ScrollUp; ScrollUp; }
         bind "Alt d" { ScrollDown; ScrollDown; ScrollDown; ScrollDown; ScrollDown; ScrollDown; ScrollDown; ScrollDown; }
         bind "Alt e" {
-            Run "/bin/bash" "/Users/ramonito/.config/zellij/scripts/omp-draft.sh" {
+            Run "bash" "-c" "$HOME/.config/zellij/scripts/omp-draft.sh" {
                 direction "Down"
                 close_on_exit true
                 name "omp-draft"
@@ -324,7 +324,6 @@ web_client {
 // 
 // theme "iceberg-dark"
 
-theme_dir "/Users/ramonito/.config/zellij/themes"
 theme "anysphere"
  
 // Theme to use when the host terminal reports a dark color palette.
